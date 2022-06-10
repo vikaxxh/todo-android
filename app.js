@@ -15,3 +15,7 @@ app.use(cors())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
 app.use("/api/v1", user)
+
+app.get('/', (req, res)=>{
+    res.send("Server is working")
+})
