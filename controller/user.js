@@ -9,6 +9,9 @@ export const register = async (req, res) => {
     const { name, email, password } = req.body;
 
     const avatar = req.files.avatar.tempFilePath;
+    if(!avtar){
+      avatar = "./download.png"
+    }
 
     let user = await User.findOne({ email });
 
