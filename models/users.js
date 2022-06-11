@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
   tasks: [
     {
       title: String,
-      discription: String,
+      description: String,
       completed: Boolean,
       createdAt: Date,
     },
