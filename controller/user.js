@@ -9,7 +9,7 @@ export const register = async (req, res) => {
     const { name, email, password } = req.body;
 
     const avatar = req.files.avatar.tempFilePath;
-    if(!avtar){
+    if(!avatar){
       avatar = "./download.png"
     }
 
